@@ -1,0 +1,119 @@
+body{
+  background:#000000;
+}
+nav{
+  background: #5b7989;
+  padding: 15px 15px;
+  text-align: right;
+  border-radius: 10px;
+  font-family: 'DancingScriptRegular';
+}
+.nav-bar{
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-name{
+  text-shadow: 2px 2px #02010a;
+  color:#fff;
+  float: left;
+  font-family: 'DancingScriptRegular';
+  font-size: 19px;
+}
+
+.center-image{
+background-color: #82c3a6;
+text-align: center;
+
+}
+.left_right-images{
+  background: #d5c75f;
+  border: solid 1px ;
+  overflow: hidden;
+  padding: 10px;
+  font-family: 'DancingScriptRegular';
+  font-size: 21px;
+
+}
+a:hover{
+  display: inline-block;
+  text-decoration: none;
+}
+.img-left{
+  text-align: center;
+  float: left;
+  box-shadow:2px 2px  #82c3a6;
+
+}
+.img-right{
+  text-align: center;
+  float: right;
+  box-shadow:2px 2px  #82c3a6 ;
+
+}
+.img-left:hover{
+  transform: rotate(10deg);
+}
+
+.img-right:hover{
+   transform: translate(20px,-5px);
+}
+
+footer{
+  border-radius: 10px;
+  background:#C6d5c5;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.contact{
+float: left;
+margin: 0 6%;
+font-family: 'DancingScriptRegular';
+}
+.conditions{
+float: left;
+margin: 0 6%;
+  font-family: 'DancingScriptRegular';
+}
+.social_media{
+float: left;
+margin: 0 6%;
+  font-family: 'DancingScriptRegular';
+}
+.right_footer{
+float: left;
+margin: 0 6%;
+  font-family: 'DancingScriptRegular';
+}
+/*paisaje y retrato*/
+.contenido{
+  background:#d5c75f;
+  overflow: hidden;
+  display: flex;
+  justify-content: center
+}
+.landscape_portrait_img{
+  float: inherit;
+  padding: 10px;
+  margin: 10px;
+}
+.img_one{
+filter: blur(10px);
+}
+.img_two{
+filter: grayscale(100%);
+
+}
+.img_three{
+filter: sepia(90%);
+}
+.img_four{
+filter: grayscale(100%);
+}
+.img_five{
+
+}
+.img_six{
+filter: grayscale(100%);
+}
