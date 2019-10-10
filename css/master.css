@@ -137,16 +137,21 @@ box-shadow:2px 2px  #02010a;
 	width: 100%;
 }
 /*RESPONSIVE*/
-@media screen and (max-width: 600px) {
-  body{
-    background: red;
+/*menu nevegación*/
+@media screen and (max-width: 800px) {
+  nav{
+      overflow: hidden;
+      width: 100%;
+  }
+  nav>p{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  float: none;
+  display: block;
   }
 
-}
-
-@media  (max-width: 900px) {
-  .img_one, .img_two, .img_three, .img_four, .img_five, .img_six {
-  height: auto;
-  max-width: 50%;
+  .nav-main{
+    text-align: center;
   }
 }
