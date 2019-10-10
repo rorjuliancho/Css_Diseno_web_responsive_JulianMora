@@ -29,9 +29,9 @@ nav{
 }
 
 .center-image{
-background-color: #82c3a6;
+background: #82c3a6;
 text-align: center;
-text-shadow: 2px 2px #02010a;
+
 
 }
 .left_right-images{
@@ -40,27 +40,31 @@ text-shadow: 2px 2px #02010a;
   overflow: hidden;
   padding: 10px;
   font-family: 'DancingScriptRegular';
-  font-size: 21px;
+
 
 }
 a:hover{
   display: inline-block;
   text-decoration: none;
 }
+
 .img-left{
   text-align: center;
   float: left;
-  box-shadow:2px 2px  #82c3a6;
-
 
 }
-.img-right{
+.img-right {
   text-align: center;
   float: right;
-  box-shadow:2px 2px  #82c3a6 ;
-
 
 }
+.img-left > a> img{
+    box-shadow:2px 2px #82c3a6;
+}
+.img-right > a> img{
+    box-shadow:2px 2px #82c3a6;
+}
+
 .img-left:hover{
   transform: rotate(10deg);
 }
@@ -150,8 +154,43 @@ box-shadow:2px 2px  #02010a;
   float: none;
   display: block;
   }
-
   .nav-main{
     text-align: center;
   }
+
 }
+
+/*imagenes responsive*/
+@media screen and (max-width: 800px){
+  .center-image > img{
+    width: 80%;
+  }
+
+  .left_right-images{
+  display: flex;
+  flex-direction: column;
+  }
+   .img-left{
+    width: 80%;
+    padding: 0 1rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .img-right{
+    width: 80%;
+    padding: 0 1rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .img-left>a>img{
+      width: 80%;
+  }
+  .img-right>a>img{
+      width: 80%;
+  }
+}
+/*footer responsive*/
