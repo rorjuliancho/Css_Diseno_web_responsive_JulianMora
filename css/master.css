@@ -1,9 +1,12 @@
 html {
   min-height: 100%;
   position: relative;
+
 }
 body{
   background:#02010a;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 nav{
   background: #5b7989;
@@ -17,8 +20,10 @@ nav{
 .nav-bar{
   display: inline-block;
   padding: 15px 15px;
+  padding-right: 30px ;
   text-decoration: none;
   color: #fff;
+
 }
 .nav-name{
   text-shadow: 2px 2px #02010a;
@@ -78,6 +83,7 @@ footer{
   background:#C6d5c5;
   overflow: hidden;
   width: 100%;
+  bottom: 0;
 }
 .contact{
 float: left;
@@ -194,3 +200,42 @@ box-shadow:2px 2px  #02010a;
   }
 }
 /*footer responsive*/
+@media screen and (max-width: 800px){
+  .foot{
+    padding: 0 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/*paisajes responsive*/
+@media screen and (max-width: 800px){
+  .contenido{
+    display: flex;
+    flex-direction: column;
+  }
+  .landscape_portrait_img {
+    padding: 0 1rem;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .landscape_portrait_img > img{
+    width: 80%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 150%;
+    width: 100%
+  }
+
+  to {
+    margin-top: -5%;
+    width: 100%;
+  }
+}
